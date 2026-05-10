@@ -1,0 +1,148 @@
+export type Course = {
+  slug: string;
+  title: string;
+  description: string;
+  iconSlug: string; // simple-icons slug (or lucide:<name> for fallback)
+  brandColor: string;
+  level: "Beginner" | "Intermediate" | "Advanced";
+  duration: string;
+  category: "Cloud" | "DevOps" | "Programming";
+  highlights: string[];
+};
+
+export const ENROLL_URL = "https://miseacademy.com/new-pricing/new-pricing.html";
+
+export const courses: Course[] = [
+  {
+    slug: "linux-fundamentals",
+    title: "Linux Fundamentals",
+    description: "Master Linux basics, essential commands, and system administration.",
+    iconSlug: "linux",
+    brandColor: "#FCC624",
+    level: "Beginner",
+    duration: "5 weeks",
+    category: "DevOps",
+    highlights: ["File system & permissions", "Bash basics", "systemd & services"],
+  },
+  {
+    slug: "docker-containers",
+    title: "Docker & Containers",
+    description: "Learn containerization, Docker images, networking, and deployments.",
+    iconSlug: "docker",
+    brandColor: "#2496ED",
+    level: "Beginner",
+    duration: "5 weeks",
+    category: "DevOps",
+    highlights: ["Images & volumes", "Compose & networks", "Production hardening"],
+  },
+  {
+    slug: "aws-networking",
+    title: "AWS Networking",
+    description: "Understand VPC, EC2, S3, Subnets, Routing, and Cloud Architecture.",
+    iconSlug: "amazonwebservices",
+    brandColor: "#FF9900",
+    level: "Intermediate",
+    duration: "8 weeks",
+    category: "Cloud",
+    highlights: ["VPC & subnets", "Route 53 & ELB", "Security groups"],
+  },
+  {
+    slug: "jenkins-cicd",
+    title: "Jenkins CI/CD",
+    description: "Automate builds, tests, and deployments using Jenkins pipelines.",
+    iconSlug: "jenkins",
+    brandColor: "#D33833",
+    level: "Beginner",
+    duration: "6 weeks",
+    category: "DevOps",
+    highlights: ["Declarative pipelines", "Shared libraries", "Blue-green deploys"],
+  },
+  {
+    slug: "backup-disaster-recovery",
+    title: "Backup & Disaster Recovery",
+    description: "Learn backup strategies, snapshotting, and enterprise DR planning.",
+    iconSlug: "lucide:shield-check",
+    brandColor: "#10B981",
+    level: "Intermediate",
+    duration: "4 weeks",
+    category: "Cloud",
+    highlights: ["RPO & RTO", "Snapshots", "Multi-region failover"],
+  },
+  {
+    slug: "bash-scripting",
+    title: "Bash Scripting",
+    description: "Automate tasks using Bash scripts, loops, functions & Linux automation.",
+    iconSlug: "gnubash",
+    brandColor: "#4EAA25",
+    level: "Beginner",
+    duration: "3 weeks",
+    category: "Programming",
+    highlights: ["Variables & control flow", "Functions", "Real automation scripts"],
+  },
+  {
+    slug: "foundation-cloud-computing",
+    title: "Foundation of Cloud Computing",
+    description: "Understand cloud basics: VM, Storage, Networking, IAM, and architecture.",
+    iconSlug: "lucide:cloud",
+    brandColor: "#3B82F6",
+    level: "Beginner",
+    duration: "4 weeks",
+    category: "Cloud",
+    highlights: ["IaaS / PaaS / SaaS", "Identity & access", "Cloud architecture"],
+  },
+  {
+    slug: "industry-devops-projects",
+    title: "Industry Grade DevOps Projects",
+    description: "Work on production-ready CI/CD, Docker, K8s, Monitoring & Automation.",
+    iconSlug: "lucide:rocket",
+    brandColor: "#F97316",
+    level: "Advanced",
+    duration: "10 weeks",
+    category: "DevOps",
+    highlights: ["End-to-end pipelines", "Real-world stacks", "Capstone projects"],
+  },
+  {
+    slug: "kubernetes",
+    title: "Kubernetes",
+    description: "Deploy, scale, and manage containerized apps on Kubernetes clusters.",
+    iconSlug: "kubernetes",
+    brandColor: "#326CE5",
+    level: "Advanced",
+    duration: "10 weeks",
+    category: "DevOps",
+    highlights: ["Deployments & services", "Helm & ArgoCD", "Cluster ops"],
+  },
+  {
+    slug: "monitoring-compliance",
+    title: "Monitoring & Compliance",
+    description: "Learn logging, metrics, alerting, audits & infra compliance checks.",
+    iconSlug: "lucide:activity",
+    brandColor: "#EF4444",
+    level: "Intermediate",
+    duration: "5 weeks",
+    category: "DevOps",
+    highlights: ["Prometheus & Grafana", "Audit logging", "Compliance baselines"],
+  },
+  {
+    slug: "terraform",
+    title: "Terraform",
+    description: "Infrastructure as Code using Terraform modules, variables & providers.",
+    iconSlug: "terraform",
+    brandColor: "#7B42BC",
+    level: "Intermediate",
+    duration: "6 weeks",
+    category: "DevOps",
+    highlights: ["Modules & workspaces", "Remote state", "Policy as code"],
+  },
+  {
+    slug: "ansible",
+    title: "Ansible",
+    description: "Automate servers using playbooks, inventories, roles & configuration mgmt.",
+    iconSlug: "ansible",
+    brandColor: "#EE0000",
+    level: "Beginner",
+    duration: "4 weeks",
+    category: "DevOps",
+    highlights: ["Roles & collections", "AWX/Tower", "Vault secrets"],
+  },
+];
